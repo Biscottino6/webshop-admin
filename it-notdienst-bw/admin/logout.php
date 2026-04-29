@@ -1,3 +1,5 @@
 <?php
+require_once __DIR__ . '/../includes/helpers.php';
 require_once __DIR__ . '/../includes/auth.php';
-echo 'Admin: logout';
+logout_user();
+redirect('login.php');
