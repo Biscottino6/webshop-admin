@@ -1,1 +1,4 @@
-<section><h2>logout</h2><p>Seite logout in Arbeit.</p></section>
+<?php
+require_once __DIR__ . '/../includes/auth.php';
+logout_user();
+redirect('index.php?page=home');
